@@ -4,17 +4,24 @@ package com.example.classmath.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "students")
+@Table(name = "students") //указывает на имя таблицы
 public class UserEntity {
-    @Id
+    @Id //помачает как primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column
     private Integer id;
-
+    @Column
     private String name;
+    @Column
     private Integer age;
+    @Column
     private String phone;
+    @Column
     private String country;
+    @Column
     private String city;
+    @Column(name = "refresh_token") //название колонки в бд
+    private String refreshToken;
 
 
     public Integer getId() { return id; }
@@ -34,5 +41,8 @@ public class UserEntity {
 
     public String getCity() { return city; }
     public void setCity(String city) { this.city = city; }
+
+    public String getRefreshToken() { return refreshToken; }
+    public void setRefreshToken(String refreshToken) { this.refreshToken = refreshToken; }
 }
 

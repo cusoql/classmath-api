@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
-@RequestMapping("/api/math")
+@RestController //принимает http и возвращает json
+@RequestMapping("/api/math")  // задает общий url - префикс
 public class MathController {
 
     private final UserRepository userRepository;

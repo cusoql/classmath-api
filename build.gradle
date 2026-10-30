@@ -27,6 +27,12 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     runtimeOnly 'com.h2database:h2'
+    // JJWT API
+    implementation 'io.jsonwebtoken:jjwt-api:0.13.0'
+
+    // Реализация и парсер JSON (нужны только во время работы приложения)
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.13.0'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.13.0' // или jjwt-gson, если используете Gson
 }
 
 tasks.named('test') {
