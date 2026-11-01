@@ -1,6 +1,5 @@
-package com.example.classmath.AuthService;
+package com.example.classmath.services;
 
-import com.example.classmath.AuthService.JwtService;
 import com.example.classmath.entity.UserEntity;
 import com.example.classmath.repository.UserRepository;
 import org.springframework.stereotype.Service;

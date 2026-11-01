@@ -1,4 +1,4 @@
-package com.example.classmath.AuthService;
+package com.example.classmath.services;
 
 
 import com.example.classmath.entity.UserEntity;

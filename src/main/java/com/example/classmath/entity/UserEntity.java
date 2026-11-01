@@ -22,6 +22,8 @@ public class UserEntity {
     private String city;
     @Column(name = "refresh_token") //название колонки в бд
     private String refreshToken;
+    @Column
+    private String operation;
 
 
     public Integer getId() { return id; }
@@ -44,5 +46,8 @@ public class UserEntity {
 
     public String getRefreshToken() { return refreshToken; }
     public void setRefreshToken(String refreshToken) { this.refreshToken = refreshToken; }
+
+    public String getOperation() { return operation; }
+    public void setOperation(String operation) { this.operation = operation; }
 }
 
